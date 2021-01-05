@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+    <link href="/index.css" rel="stylesheet">
+    <link href="/res/css/about.css" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+<body style="overflow: hidden;">
+    <div class="nav-bar">
+        <a href="/"><i class="fas fa-home"></i></a>
+        <a class="selected" href="/about"><i class="fas fa-user"></i></a>
+        <a href="/projects"><i class="fas fa-code-branch"></i></a>
+        <a href="/skills"><i class="fas fa-chart-pie"></i></a>
+        <a href="/contact"><i class="fas fa-envelope"></i></a>
+    </div>
+    <div class="content">
+        <div class="title">
+            <h1 aria-label="
+                About
+            " class="animate__animated animate__rubberBand">
+                <span style="color:#FF6F00;" class="a">A</span>
+                <span style="color:#FF6F00;" class="a">b</span>
+                <span style="color:#FF6F00;" class="a">o</span>
+                <span style="color:#FF6F00;" class="a">u</span>
+                <span style="color:#FF6F00;" class="a">t</span>
+                &ensp;
+                <span style="color:#FF6F00;" class="a">m</span>
+                <span style="color:#FF6F00;" class="a">e</span>
+            </h1>
+        </div>
+        
+        <div class="gradient"></div>
+        <div class="tilted">
+            <div class="images">
+                <img class="one" src="/res/img/1.jpg" alt="">
+                <img class="two" src="/res/img/2.jpg" alt="">
+                <img class="one" src="/res/img/3.jpg" alt="">
+                <img class="two" src="/res/img/4.jpg" alt="">
+                <img class="one" src="/res/img/5.jpg" alt="">
+                <img class="two" src="/res/img/6.jpg" alt="">
+                <img class="one" src="/res/img/7.jpeg" alt="">
+                <img class="two" src="/res/img/8.jpeg" alt="">
+                <img class="one" src="/res/img/9.jpg" alt="">
+                <img class="two" src="/res/img/10.jpeg" alt="">
+                <img class="one" src="/res/img/11.png" alt="">
+            </div>
+        </div>
+        <div class="side-div">
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function () {
+            $(".a").mouseenter(function () {
+                var el = $(this);
+                $(this).addClass('animate__animated animate__rubberBand');
+                $(this).one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+
+                    el.removeClass('animate__animated animate__rubberBand');
+
+                });
+
+            });
+
+
+        }, 100);
+    </script>
+</body>
+</html>

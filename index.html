@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arthur Gonzaga</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
     <link href="index.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -21,7 +21,7 @@
 <body>
     <div class="nav-bar">
         <a class="selected" href="/"><i class="fas fa-home"></i></a>
-        <a href="about.html"><i class="fas fa-user"></i></a>
+        <a href="/res/pages/about.html"><i class="fas fa-user"></i></a>
         <a href="/projects"><i class="fas fa-code-branch"></i></a>
         <a href="/skills"><i class="fas fa-chart-pie"></i></a>
         <a href="/contact"><i class="fas fa-envelope"></i></a>
@@ -31,7 +31,7 @@
             <h1 aria-label="
                 Hi,
                 I’m Arthur, mobile developer.
-            ">
+            " class="animate__animated animate__zoomIn">
                 <span class="a">H</span>
                 <span class="a">i</span>
                 <span class="a">,</span>
@@ -66,8 +66,10 @@
                 <span class="a">r</span>
                 <span class="a">.</span>
             </h1>
-            <p>Native / Hybrid android developer</p>
-            <a href="/contact">Contact me</a>
+            <div class="animate__animated animate__fadeIn animate__delay-1s">
+                <p>Native / Hybrid android developer</p>
+                <a href="/contact">Contact me</a>
+            </div>
         </div>
         <div id="particles-js" class="side-div"></div>
     </div>
@@ -79,6 +81,7 @@
     </script>
 
     <script>
+
         setTimeout(function () {
             $(".a").mouseenter(function () {
                 var el = $(this);
