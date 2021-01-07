@@ -52,11 +52,11 @@
 }
 
 .title{
-    position: fixed;
-    height: 450px;
+    position: absolute;
+    height: 400px;
     width: 525px;
-    left: 179px;
-    top: 135px;
+    left: 15vw;
+    top: 25vh;
 }
 
 .title h1{
@@ -67,6 +67,7 @@
     letter-spacing: -10px;
     font-size: 75px !important;
     cursor: default;
+    margin: 0;
 }
 .title h1:after {
     display: none;
@@ -122,25 +123,52 @@
   }
 @media screen and (max-width: 1300px) {
     .side-div {
-        width: 55vw;
+        width: 40vw;
     }
   }
 
-  @media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
+    
     .side-div {
         visibility: hidden;
     }
-    .nav-bar{
+
+    .nav-bar {
         flex-direction: row;
         height: 100px;
         width: 100%;
         top: 40px;
         left: 0;
     }
+
     .nav-bar a{
         width: 15%;
     }
+
     .nav-bar .selected{
         width: 15%;
     }
-  }
+}
+
+
+@media screen and (max-width: 1000px){
+    .title h1{
+        font-size: 65px !important;
+        letter-spacing: -8px;
+    }
+
+    .title{
+        height: 410px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .title h1{
+        font-size: 55px !important;
+        letter-spacing: -6px;
+    }
+
+    .title{
+        height: 350px;
+    }
+}
