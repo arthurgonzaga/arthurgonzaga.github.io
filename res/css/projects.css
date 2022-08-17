@@ -6,8 +6,33 @@
     right: 0;
     top: 0;
     padding: 90px;
+}
+
+.side-div-projects-background {
+    position: fixed;
+    z-index: -2;
+    width: 52vw;
+    height: 99.5%;
+    right: 0;
+    top: 0;
+    padding: 90px;
     background: #F8F8F8;
     clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.title {
+    position: fixed;
+    height: auto;
+    width: 525px;
+    left: 15vw;
+    top: 25vh;
+}
+
+.title p {
+    top: 17vh;
+}
+.title ul {
+    top: 24vh;
 }
 
 .side-div-projects .container {
@@ -15,7 +40,7 @@
     margin-left: 7%;
 }
 
-.about-me{
+.about-me {
     top: 116px;
     bottom: auto;
 }
@@ -23,6 +48,15 @@
 @media screen and (max-width: 500px){
     .about-me{
         top: 70px;
+    }
+    .title p {
+        top: 8vh;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .title p {
+        top: 12vh;
     }
 }
 
@@ -33,15 +67,32 @@
     }
 
 }
+
 @media screen and (max-width: 1200px) {
+
+    .title p {
+        top: 13vh;
+    }
 
     .side-div-projects {
         flex-direction: row;
         height: 1000px;
         width: 100%;
-        top: 450px;
-        background: #fff;
+        top: 350px;
         clip-path: none;
     }
+    .side-div-projects-background {
+        background: #fff;
+    }
 
+    .title {
+        position: absolute;
+    }
+
+    .animate__delay-3s {
+        visibility: hidden;
+    }
+    .animate__delay-5s {
+        visibility: hidden;
+    }
 }
