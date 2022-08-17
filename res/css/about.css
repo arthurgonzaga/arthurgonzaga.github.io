@@ -11,7 +11,7 @@
     bottom: auto;
 }
 
-.animate__animated.animate__delay-7s {
+.animate__animated.animate__delay-7s { 
     -webkit-animation-delay: 7s;
     animation-delay: 7s;
     -webkit-animation-delay: calc(var(--animate-delay)*7);
