@@ -1,0 +1,47 @@
+.side-div-projects {
+    position: absolute;
+    z-index: -2;
+    width: 52vw;
+    height: 99.5%;
+    right: 0;
+    top: 0;
+    padding: 90px;
+    background: #F8F8F8;
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.side-div-projects .container {
+    width: 93%;
+    margin-left: 7%;
+}
+
+.about-me{
+    top: 116px;
+    bottom: auto;
+}
+
+@media screen and (max-width: 500px){
+    .about-me{
+        top: 70px;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+    .side-div-projects {
+        width: 55vw;
+    }
+
+}
+@media screen and (max-width: 1200px) {
+
+    .side-div-projects {
+        flex-direction: row;
+        height: 1000px;
+        width: 100%;
+        top: 450px;
+        background: #fff;
+        clip-path: none;
+    }
+
+}
