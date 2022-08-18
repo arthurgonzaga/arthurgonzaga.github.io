@@ -1,0 +1,141 @@
+.side-div-experience {
+    position: absolute;
+    z-index: -2;
+    width: 60vw;
+    height: 99.5%;
+    right: 0;
+    top: 0;
+    padding: 90px;
+}
+
+.side-div-experience-background {
+    position: fixed;
+    z-index: -2;
+    width: 60vw;
+    height: 99.5%;
+    right: 0;
+    top: 0;
+    padding: 90px;
+    background: #F8F8F8;
+    clip-path: polygon(4% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.education-title {
+    position: fixed;
+    height: auto;
+    width: 525px;
+    left: 15vw;
+    top: 25vh;
+}
+
+.education-title,  p, ul{
+    position: absolute;
+    width: 447.07px;
+    height: 45px;
+    bottom: 65px;
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    color: #7D91B0;
+}
+
+.animate__animated.animate__delay-7s { 
+    -webkit-animation-delay: 7s;
+    animation-delay: 7s;
+    -webkit-animation-delay: calc(var(--animate-delay)*7);
+    animation-delay: calc(var(--animate-delay)*7)
+}
+
+.education-title h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    position: absolute;
+    color: #425066;
+    letter-spacing: -10px;
+    font-size: 75px !important;
+    cursor: default;
+    margin: 0;
+}
+
+.experience-title h1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    color: #425066;
+    letter-spacing: -10px;
+    font-size: 75px !important;
+    cursor: default;
+    margin: 0;
+}
+
+.education-title p, .experience-title p {
+    top: 17vh;
+}
+.education-title ul, .experience-title ul {
+    top: 24vh;
+}
+
+.side-div-experience .container {
+    width: 93%;
+    margin-left: 7%;
+}
+
+.about-me {
+    top: 116px;
+    bottom: auto;
+}
+
+@media screen and (max-width: 500px){
+    .about-me{
+        top: 70px;
+    }
+    .education-title p {
+        top: 8vh;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .education-title p {
+        top: 12vh;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+
+    .side-div-experience {
+        width: 55vw;
+    }
+
+    .side-div-experience-background {
+        width: 50vw;
+    }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    .education-title p {
+        top: 13vh;
+    }
+
+    .side-div-experience {
+        flex-direction: row;
+        height: 1000px;
+        width: 100%;
+        top: 350px;
+        clip-path: none;
+    }
+    
+    .side-div-experience-background {
+        background: #fff;
+    }
+
+    .education-title {
+        position: absolute;
+    }
+
+    .education-title {
+        position: absolute;
+    }
+}
