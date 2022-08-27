@@ -13,7 +13,7 @@
     text-align: center;
     width: 100%;
     font-size: 25px;
-    color: #e1e3e7;
+    color: #e1e3e7 !important;
 }
 .nav-bar a:hover{
     color: #ff9543;
@@ -37,7 +37,7 @@
     width: 100%;
     font-size: 30px;
     left: -3px;
-    color: #FF6F00;
+    color: #FF6F00 !important;
     background-color: #ff6f0009;
     clip-path: circle();
 }
